@@ -1,10 +1,10 @@
 
-const renderLogin = (req, res) => {
+const getLogin = (req, res) => {
     res.render('login');
 }
 
-const renderRegister = (req, res) => {
+const getRegister = (req, res) => {
     res.render('register');
 }
 
-module.exports = { renderLogin, renderRegister };
+module.exports = { getLogin, getRegister };

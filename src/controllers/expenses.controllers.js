@@ -1,6 +1,10 @@
 
-const renderExpenses = (req, res) => {
+const getExpenses = (req, res) => {
     res.render('expenses');
 }
+const getExpenseList = (req, res) => {
+    const { name } = req.params;
+    res.render('list', {name: name});
+}
 
-module.exports = { renderExpenses };
+module.exports = { getExpenses, getExpenseList };
