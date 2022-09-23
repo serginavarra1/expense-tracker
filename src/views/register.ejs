@@ -8,26 +8,22 @@
     <title>Register</title>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 100px;">
+    <div style="text-align: center; margin: auto; width: 30%; padding: 100px;">
         <h1 style="color: grey">REGISTER</h1>
         <form action="/register" method="POST">
-            <div style="padding: 10px;">
-                <p>Username</p>
-                <input type="text" placeholder="Username">
+            <div class="input-group mb-3" style="padding: 10px;">
+                <span class="input-group-text" id="basic-addon1">Username</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Email" aria-describedby="basic-addon1">
             </div>
-            <div style="padding: 10px;">
-                <p>Email</p>
-                <input type="email" placeholder="example@example.com">
+            <div class="input-group mb-3" style="padding: 10px;">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+                <input type="email" class="form-control" placeholder="example@example.com" aria-label="Email" aria-describedby="basic-addon1">
+            </div> 
+            <div class="input-group mb-3" style="padding: 10px;">
+                <span class="input-group-text" id="basic-addon1">Password</span>
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
             </div>
-            <div style="padding: 10px;">
-                <p>Password</p>
-                <input type="password" placeholder="Password">
-            </div>
-            <div style="padding: 10px;">
-                <p>Confirm Password</p>
-                <input type="password" placeholder="Confirm Password">
-            </div>
-            <div style="padding: 10px;">
+            <div style="padding: 20px;">
                 <input class="btn btn-outline-primary" type="submit" value="Login">
             </div>
         </form>

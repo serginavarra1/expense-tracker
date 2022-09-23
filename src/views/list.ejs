@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title><%= name[0].toUpperCase() + name.substr(1) %></title>
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpdd2XAl970XbOIa6gMmnTpVkQmeelfp6Rg&usqp=CAU" alt="Logo" width="40" height="35" class="d-inline-block align-text-mid">
+                Expense Tracker
+            </a>
+            <a class="nav-link active" href="/profile">Profile
+                <img src="https://wellbeingchirony.com/wp-content/uploads/2021/03/Deafult-Profile-Pitcher.png" width="40" height="40" class="d-inline-block align-text-mid">
+            </a>
+        </div>
+    </nav>
+    <div style="padding: 20px;">
+        <a href="/expenses">
+            <button type="button"  class="btn-close" aria-label="Close"></button>
+        </a>
+    </div>
+    <div style="margin: auto; width: 50%; padding: 20px;">
+        <h1 style="color: grey; padding: 20px; text-align: center;"><%= name[0].toUpperCase() + name.substr(1) %></h1>
+        <table class="table table-success table-striped">
+            <thead style="text-align: center;">
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Category</th>
+                <th scope="col">Coment</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody style="text-align: center;">
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>
