@@ -13,18 +13,18 @@
         <form action="/register" method="POST">
             <div class="input-group mb-3" style="padding: 10px;">
                 <span class="input-group-text" id="basic-addon1">Username</span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Email" aria-describedby="basic-addon1">
+                <input name="username" type="text" class="form-control" placeholder="Username" aria-label="Email" aria-describedby="basic-addon1" required>
             </div>
             <div class="input-group mb-3" style="padding: 10px;">
                 <span class="input-group-text" id="basic-addon1">Email</span>
-                <input type="email" class="form-control" placeholder="example@example.com" aria-label="Email" aria-describedby="basic-addon1">
+                <input name="email" type="email" class="form-control" placeholder="example@example.com" aria-label="Email" aria-describedby="basic-addon1" required>
             </div> 
             <div class="input-group mb-3" style="padding: 10px;">
                 <span class="input-group-text" id="basic-addon1">Password</span>
-                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                <input name="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
             </div>
             <div style="padding: 20px;">
-                <input class="btn btn-outline-primary" type="submit" value="Login">
+                <input class="btn btn-outline-primary" type="submit" value="Register">
             </div>
         </form>
         <a href="/login">Allready have an account? login here</a>
