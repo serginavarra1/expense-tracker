@@ -10,6 +10,9 @@
 <body>
     <div style="text-align: center; margin: auto; width: 30%; padding: 100px;">
         <h1 style="color: grey">LOGIN</h1>
+        <% if(messages.error) { %>
+            <p style="color: red"><%= messages.error %></p>
+        <% } %>
         <form action="/login" method="POST">
            <div class="input-group mb-3" style="padding: 10px;">
                 <span class="input-group-text" id="basic-addon1">Email</span>

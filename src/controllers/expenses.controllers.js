@@ -1,10 +1,12 @@
 
-const getExpenses = (req, res) => {
-    res.render('expenses');
+const getExpenses = async (req, res) => {
+    const user = await req.user;
+    res.render('expenses', { username: user.username });
 }
-const getExpenseList = (req, res) => {
+const getExpenseList = async (req, res) => {
     const { name } = req.params;
-    res.render('list', {name: name});
+    const user = await req.user;
+    res.render('list', {name: name, user: username.name});
 }
 
 module.exports = { getExpenses, getExpenseList };

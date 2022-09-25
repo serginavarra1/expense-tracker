@@ -5,10 +5,6 @@ const getLogin = (req, res) => {
     res.render('login');
 }
 
-const postLogin = (req, res) => {
-    console.log('');
-}
-
 const getRegister = (req, res) => {
     res.render('register');
 }
@@ -22,7 +18,6 @@ const postRegister = async (req, res) => {
     } catch {
         res.redirect('/register');
     }
-    
 }
 
-module.exports = { getLogin, getRegister, postLogin, postRegister };
+module.exports = { getLogin, getRegister, postRegister };
