@@ -1,7 +1,5 @@
 const { Router } = require('express');
 const passport = require('passport');
-const pool = require('./../database');
-
 const { getLogin, getRegister, postRegister } = require('./../controllers/authentication.controllers')
 const router = Router();
 
