@@ -29,7 +29,7 @@
         <form action="/expenses/add" method="POST">
             <div class="input-group mb-3">
                 <label class="input-group-text" for="inputGroupSelect01">Category</label>
-                <select class="form-select" id="inputGroupSelect01">
+                <select name="category" class="form-select" id="inputGroupSelect01">
                 <option selected>food</option>
                 <option value="1">housing</option>
                 <option value="2">transportation</option>
@@ -40,11 +40,11 @@
             </div>       
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Comment</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input name="comment" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">$</span>
-                <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                <input name="amount" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
             </div>
             <div style="text-align:center; padding: 20px;">
                 <button type="submit" class="btn btn-outline-success me-2">Add Expense</a>
