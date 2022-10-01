@@ -8,6 +8,6 @@ router.get('/expenses/add', getAdd);
 
 router.post('/expenses/add', postAdd);
 
-router.get('/expenses/:name', getExpenseList);
+router.get('/expenses/:listcategory', getExpenseList);
 
 module.exports = router;

@@ -3,8 +3,6 @@ const passport = require('passport');
 const { getLogin, getRegister, postRegister } = require('./../controllers/authentication.controllers')
 const router = Router();
 
-
-
 router.get('/login', getLogin);
 
 router.post('/login', passport.authenticate('local', {

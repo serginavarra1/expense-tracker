@@ -30,7 +30,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Food</h5>
-                <p class="card-text">Total expense: 0€</p>
+                <p class="card-text">Total expense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'food') !== undefined ? totalExpense.find(expense => expense.category === 'food').sum : 0  %></label>€</p>
                 </div>
             </div>
             </div>
@@ -41,7 +41,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Housing</h5>
-                <p class="card-text">Total explense: 0€</p>
+                <p class="card-text">Total explense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'housing') !== undefined ? totalExpense.find(expense => expense.category === 'housing').sum : 0  %></label>€</p>
                 </div>
             </div>
             </div>
@@ -52,7 +52,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Transportation</h5>
-                <p class="card-text">Total expense: 0€</p>
+                <p class="card-text">Total expense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'transportation') !== undefined ? totalExpense.find(expense => expense.category === 'transportation').sum : 0  %></label>€</p>
                 </div>
             </div>
             </div>
@@ -63,7 +63,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Clothing</h5>
-                <p class="card-text">Total expense: 0€</p>
+                <p class="card-text">Total expense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'clothing') !== undefined ? totalExpense.find(expense => expense.category === 'clothing').sum : 0  %></label>€</p>
                 </div>
             </div>
             </div>
@@ -74,7 +74,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Utilities</h5>
-                <p class="card-text">Total expense: 0€</p>
+                <p class="card-text">Total expense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'utilities') !== undefined ? totalExpense.find(expense => expense.category === 'utilities').sum : 0 %></label>€</p>
                 </div>
             </div>
             </div>
@@ -85,7 +85,7 @@
                 </a>
                 <div class="card-body">
                 <h5 class="card-title">Savings</h5>                    
-                <p class="card-text">Total expense: 0€</p>
+                <p class="card-text">Total expense: <label style="color: green"><%= totalExpense.find(expense => expense.category === 'savings') !== undefined ? totalExpense.find(expense => expense.category === 'savings').sum : 0 %></label>€</p>
                 </div>
             </div>
             </div>

@@ -2,7 +2,8 @@ const pool = require('./../database');
 
 const getExpenses = async (req, res) => {
     const user = await req.user;
-    res.render('expenses', { username: user.username });
+    const totalExpense = await pool.query('SELECT category, SUM(amount) FROM expenses WHERE u_id = $1 GROUP BY category', [user.u_id]);
+    res.render('expenses', { username: user.username, totalExpense: totalExpense.rows });
 }
 
 const getAdd = async (req, res) => {
@@ -20,9 +21,10 @@ const postAdd = async (req, res) => {
 }
 
 const getExpenseList = async (req, res) => {
-    const { name } = req.params;
     const user = await req.user;
-    res.render('list', { name: name, username: user.username });
+    const { listcategory } = req.params;
+    const expenseList = await pool.query('SELECT * FROM expenses WHERE u_id = $1 and category = $2', [user.u_id, listcategory]);
+    res.render('list', {username: user.username, listName: listcategory, list: expenseList.rows});
 }
 
 module.exports = { getExpenses, getExpenseList, getAdd, postAdd };
