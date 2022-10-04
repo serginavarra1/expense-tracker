@@ -40,6 +40,7 @@ app.use(passport.session());
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
 app.use(require('./routes/expenses'));
+app.use(require('./routes/api'));
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
